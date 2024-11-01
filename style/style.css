@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root{
+    --cor-primaria:#382f32;
+    --cor-secudariia: #fcd9e5;
+    --cor-terciaria:  #ffeaf2;
+   --cor-hover: #f1396d;
+
+    --fonte-principal:  "Qwitcher Grypen", cursive;
+    --fonte-secundaria: "Nunito Sans", sans-serif;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    box-sizing: border-box;
+    background-color:var(--cor-primaria);
+    color: var(--cor-secudariia);
+    font-size: 1.5rem;
+}
+.cabecalho{
+    padding: 1% 1% 1% 15%;
+    background-color: var(--cor-secudariia);
+    
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 2.80rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+}
+.cabecalho__menu__link{
+    text-decoration: none;
+    color: var(--cor-primaria);
+}
+.cabecalho__menu__link:hover{
+  color: var(--cor-hover);
+}
+.apresentacao{
+    padding: 7% 16%;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.apresentacao__carta{
+    padding: 5% 15% 15%;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    font-family: var(--fonte-principal);
+    font-size: 40px;
+}
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction:column;
+    gap: 3.1rem;
+}
+.apresentacao__conteudo__titulo{
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 4rem;
+}
+.titulo__destaque{
+    color: var(--cor-terciaria);
+}
+.apresentacao__imagem{
+width: 30%;
+box-shadow: 8px 8px var(--cor-secudariia);
+}
+.apresentacao__fotos{
+    padding:2% 2%;
+    display: flex;
+    align-items:center;
+}
+.galeria__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 15px;
+    padding: 0 0.31rem;
+}
+.galeria__itens{
+    width: 25.25rem;
+    height: 18.25rem;
+    border: 8px solid #005C53;
+    box-shadow: 0.38rem 0.38rem var(--cor-secudariia);
+    flex-grow: 1;
+    transition:5s;
+}
+.galeria__itens img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+ 
+}
+.galeria__itens :hover{
+    transform: scale(1.1);
+    filter: none;
+}
+.rodape{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-secudariia);
+    color: #042940;
+    padding:0.62rem;
+    align-items: center;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+}
